@@ -74,21 +74,21 @@ if( is_admin() ) {
     require_once( MYSTYLE_INCLUDES . 'admin/help/help-dispatch.php' );
     require_once( MYSTYLE_INCLUDES . 'admin/class-mystyle-woocommerce-admin-product.php' );
     require_once( MYSTYLE_INCLUDES . 'admin/class-mystyle-woocommerce-admin-order.php' );
-    
+
     //Plugin setup and registrations
     $mystyle_admin = new MyStyle_Admin();
     register_activation_hook( __FILE__, array( 'MyStyle_Admin', 'activate' ) );
     register_deactivation_hook( __FILE__, array( 'MyStyle_Admin', 'deactivate' ) );
     register_uninstall_hook( __FILE__, array( 'MyStyle_Admin', 'uninstall' ) );
-    
-    //set up the options page 
+
+    //set up the options page
     $mystyle_options_page = new MyStyle_Options_Page();
     add_filter( 'contextual_help', 'mystyle_help_dispatch', 10, 3 );
-    
+
     //hook into the WooCommerce admin
     $mystyle_woocommerce_admin_product = new MyStyle_WooCommerce_Admin_Product();
     $mystyle_woocommerce_admin_order = new MyStyle_WooCommerce_Admin_Order();
-    
+
     //load qunit
     if( ( defined('MYSTYLE_LOAD_QUNIT') ) && ( MYSTYLE_LOAD_QUNIT == true ) ) {
         add_action( 'admin_footer', 'mystyle_load_qunit' );
@@ -98,10 +98,10 @@ if( is_admin() ) {
     //---- FRONT END ----//
     require_once( MYSTYLE_INCLUDES . 'frontend/class-mystyle-frontend.php' );
     require_once( MYSTYLE_INCLUDES . 'frontend/endpoints/class-mystyle-handoff.php' );
-    
+
     $mystyle_frontend = new MyStyle_FrontEnd();
     $mystyle_handoff = new MyStyle_Handoff();
 }
 
 //Register shortcodes
-add_shortcode( 'mystyle_customizer', array( 'MyStyle_Customizer_Shortcode', 'output' ) ); 
+add_shortcode( 'mystyle_customizer', array( 'MyStyle_Customizer_Shortcode', 'output' ) );

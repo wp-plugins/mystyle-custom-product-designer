@@ -70,11 +70,6 @@ The MyStyle Custom Product Designer requires that you have WordPress with the Wo
 
 == Changelog ==
 
-= 0.5.1 =
-* Fixed truncated plugin description
-* Fixed default download directory for easier install
-* Fixed marketplace banner graphic for WP page title text
-
 = 0.5.0 =
 * Beta release
 * Added Designs table
