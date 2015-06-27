@@ -1,0 +1,63 @@
+= 1.0.1 =
+
+* Basic PHPUnit test coverage complete.
+
+= 1.0.0 =
+
+* Added PHPUnit tests for the MyStyle_Handoff class.
+* Added PHPUnit tests for the MyStyle_Design class.
+* Added PHPUnit tests for the MyStyle_DesignManager class.
+* Added PHPUnit tests for the MyStyle_EntityManager class.
+
+= 0.5.3 =
+
+* Added PHPUnit tests for the MyStyle_Install class.
+
+= 0.5.2 =
+
+* Updated the README.md file.
+
+= 0.5.1 =
+
+* Fixed truncated plugin description
+* Fixed default download directory for easier install
+* Fixed marketplace banner graphic for WP page title text
+
+= 0.5.0 =
+
+* Beta release
+* Added Designs table
+
+= 0.4.2 =
+
+* Updated the readme.txt
+* Updated the help
+
+= 0.4.1 =
+
+* Fixed the help link.
+* Updated the registration url.
+
+= 0.4.0 =
+
+* Added customize button to product listing.
+* Fixed bug with extra closing div on the front end product page.
+* Added help link to options page.
+* Now handling no param scenario for Customize page.
+
+= 0.3.0 =
+
+* Added basic customizer functionality.
+
+= 0.2.1 =
+
+* Added Secret field.
+
+= 0.2.0 =
+
+* Now tested with PHPUnit and QUnit and fully compatible with WP 4.2
+
+= 0.1.0 =
+
+* Initial Alpha version.
+
